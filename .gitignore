@@ -396,3 +396,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Project Specific
+**/Binaries/
+**/Intermediate/
+*.log
+
+# Allow
+!ThirdParty/premake/Binaries/
+
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+*.sln
