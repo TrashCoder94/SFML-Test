@@ -9,7 +9,7 @@ if %errorlevel% neq 0 exit /b %errorlevel%
 echo "Building Debug Configuration"
 devenv SFMLTest.sln /rebuild Debug
 if %errorlevel% neq 0 (
-	dir /b /a /s
+	dir ThirdParty\SFML-Binaries-Test\Windows\lib\Debug /b /a /s
 	exit /b %errorlevel%
 )
 
