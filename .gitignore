@@ -404,6 +404,9 @@ FodyWeavers.xsd
 
 # Allow
 !ThirdParty/premake/Binaries/
+!ThirdParty/SFML-Binaries-Test/Windows/lib/*
+!ThirdParty/SFML-Binaries-Test/Mac/Frameworks/*
+!ThirdParty/SFML-Binaries-Test/Linux/lib/*
 
 **.vcxproj
 **.vcxproj.filters
