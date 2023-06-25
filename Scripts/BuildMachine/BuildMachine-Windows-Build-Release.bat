@@ -9,7 +9,6 @@ if %errorlevel% neq 0 exit /b %errorlevel%
 echo "Building Release Configuration"
 devenv SFMLTest.sln /rebuild Release
 if %errorlevel% neq 0 (
-	dir ThirdParty\SFML-Binaries-Test\Windows\lib\Release /b /a /s
 	exit /b %errorlevel%
 )
 
