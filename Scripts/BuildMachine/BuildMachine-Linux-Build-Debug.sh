@@ -1,8 +1,6 @@
 #!/bin/sh
 
-sudo apt-get update
-sudo apt install libgl-dev
-sudo apt install xorg-dev
+sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox
 
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5
