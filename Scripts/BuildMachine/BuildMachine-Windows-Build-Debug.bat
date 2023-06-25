@@ -8,6 +8,9 @@ if %errorlevel% neq 0 exit /b %errorlevel%
 
 echo "Building Debug Configuration"
 devenv SFMLTest.sln /rebuild Debug
-if %errorlevel% neq 0 exit /b %errorlevel%
+if %errorlevel% neq 0 (
+	dir /b /a /s
+	exit /b %errorlevel%
+)
 
 popd

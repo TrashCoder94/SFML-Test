@@ -2,6 +2,8 @@
 
 sudo apt-get install libsfml-dev
 
+cp -R /$(CURDIR)/ThirdParty/SFML-Binaries-Test/Linux/. /usr/local.
+
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5
 ThirdParty/premake/Binaries/premake5 --file=premake5.lua gmake2
