@@ -32,6 +32,11 @@ workspace "SFMLTest"
 		"-IGNORE:4006"
 	}
 	
+	defines
+	{
+		"SFML_STATIC"
+	}
+	
 	filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
@@ -60,6 +65,9 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories
 IncludeDir = {}
+IncludeDir["SFMLWindows"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/include"
+IncludeDir["SFMLMac"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/include"
+IncludeDir["SFMLLinux"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Linux/include"
 
 -- Other premakes to use
 group "Dependencies"
