@@ -69,6 +69,125 @@ IncludeDir["SFMLWindows"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windo
 IncludeDir["SFMLMac"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/include"
 IncludeDir["SFMLLinux"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Linux/include"
 
+function includeAndLinkSFML()
+	filter "system:windows"
+		includedirs 
+		{ 
+			"%{IncludeDir.SFMLWindows}"
+		}
+		libdirs
+		{
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/lib",
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/lib/**"
+		}
+	filter ""
+	
+	filter { "system:windows", "configurations:Debug" }
+		links
+		{
+			"opengl32",
+			"freetype",
+			"winmm",
+			"gdi32",
+			"openal32",
+			"flac",
+			"vorbisenc",
+			"vorbisfile",
+			"vorbis",
+			"ogg",
+			"ws2_32",
+			"sfml-window-s-d",
+			"sfml-system-s-d",
+			"sfml-graphics-s-d",
+			"sfml-audio-s-d"
+		}
+	filter {}
+	
+	filter { "system:windows", "not configurations:Debug" }
+		links
+		{
+			"sfml-window-s",
+			"sfml-system-s",
+			"opengl32",
+			"freetype",
+			"sfml-graphics-s",
+			"winmm",
+			"gdi32",
+			"openal32",
+			"flac",
+			"vorbisenc",
+			"vorbisfile",
+			"vorbis",
+			"ogg",
+			"sfml-audio-s",
+			"ws2_32"
+		}
+	filter ""
+	
+	filter "system:macosx"
+		includedirs 
+		{
+			"%{IncludeDir.SFMLMac}"
+		}
+		libdirs
+		{
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/**"
+		}
+		links
+		{
+			"QuartzCore.framework", 
+			"Metal.framework", 
+			"Cocoa.framework", 
+			"IOKit.framework", 
+			"CoreVideo.framework", 
+			"CoreGraphics.framework",
+			"sfml-audio.framework",
+			"sfml-graphics.framework",
+			"sfml-network.framework",
+			"sfml-system.framework",
+			"sfml-window.framework"
+		}
+	filter ""
+	
+	filter "system:linux"
+		includedirs 
+		{ 
+			"%{IncludeDir.SFMLLinux}"
+		}
+		libdirs
+		{
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Linux/lib/**"
+		}
+		links
+		{
+			"dl", 
+			"GL", 
+			"pthread", 
+			"X11"
+		}
+	filter ""
+	
+	filter { "system:linux", "configurations:Debug" }
+		links
+		{
+			"sfml-window-s-d",
+			"sfml-system-s-d",
+			"sfml-graphics-s-d",
+			"sfml-audio-s-d"
+		}
+	filter {}
+	
+	filter { "system:linux", "not configurations:Debug" }
+		links
+		{
+			"sfml-window-s",
+			"sfml-system-s",
+			"sfml-graphics-s",
+			"sfml-audio-s"
+		}
+	filter {}
+end
+
 -- Other premakes to use
 group "Dependencies"
 	include "ThirdParty/premake"
