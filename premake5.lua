@@ -156,7 +156,7 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"%{wks.location}"
+			"/home/runner/work/SFML-Test/SFML-Test"
 		}
 		links
 		{
