@@ -154,6 +154,10 @@ function includeAndLinkSFML()
 		{ 
 			"%{IncludeDir.SFMLLinux}"
 		}
+		libdirs
+		{
+			"%{wks.location}"
+		}
 		links
 		{
 			"dl", 
