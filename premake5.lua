@@ -151,7 +151,7 @@ function includeAndLinkSFML()
 	
 	filter "system:linux"
 		includedirs 
-		{ 
+		{
 			"%{IncludeDir.SFMLLinux}"
 		}
 		links
@@ -166,10 +166,10 @@ function includeAndLinkSFML()
 	filter { "system:linux", "configurations:Debug" }
 		links
 		{
-			"sfml-window-d",
-			"sfml-system-d",
-			"sfml-graphics-d",
-			"sfml-audio-d"
+			"sfml-window",
+			"sfml-system",
+			"sfml-graphics",
+			"sfml-audio"
 		}
 	filter {}
 	
