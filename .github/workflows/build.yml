@@ -69,6 +69,7 @@ jobs:
         run: | 
           sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox
           sudo apt-get install libsfml-dev
+          export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/runner/work/SFML-Test/SFML-Test
           
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}

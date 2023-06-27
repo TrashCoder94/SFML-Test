@@ -154,10 +154,6 @@ function includeAndLinkSFML()
 		{ 
 			"%{IncludeDir.SFMLLinux}"
 		}
-		libdirs
-		{
-			"/home/runner/work/SFML-Test/SFML-Test"
-		}
 		links
 		{
 			"dl", 
