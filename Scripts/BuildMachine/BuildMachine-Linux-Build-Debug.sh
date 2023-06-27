@@ -6,7 +6,6 @@ ThirdParty/premake/Binaries/premake5 --file=premake5.lua gmake2
 if [ $? -ne 0 ] 
 then
 echo "Generating project files failed, exiting out..."
-find . -name *.so
 exit 1
 fi
 
@@ -14,6 +13,9 @@ make config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
+pkg-config --list-all
+realpath sfml-window-d.so
+realpath libsfml-window-d.so
 find . -name *.so
 exit 1
 fi
