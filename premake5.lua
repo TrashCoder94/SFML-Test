@@ -154,10 +154,6 @@ function includeAndLinkSFML()
 		{ 
 			"%{IncludeDir.SFMLLinux}"
 		}
-		libdirs
-		{
-			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Linux/lib/**"
-		}
 		links
 		{
 			"dl", 
