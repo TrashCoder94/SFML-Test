@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cp -R /$(CURDIR)/ThirdParty/SFML-Binaries-Test/Linux/. /usr/local/.
+
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5
 ThirdParty/premake/Binaries/premake5 --file=premake5.lua gmake2
@@ -14,8 +16,6 @@ if [ $? -ne 0 ]
 then
 echo "Building debug configuration failed, exiting out..."
 find . -type f
-realpath sfml-window-d.so
-realpath libsfml-window-d.so
-find . -name *.so
+realpath Window.hpp
 exit 1
 fi
