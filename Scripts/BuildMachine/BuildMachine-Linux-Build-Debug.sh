@@ -13,7 +13,7 @@ make config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
-pkg-config --list-all
+find . -type f
 realpath sfml-window-d.so
 realpath libsfml-window-d.so
 find . -name *.so
