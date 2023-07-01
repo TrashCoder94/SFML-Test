@@ -162,10 +162,10 @@ function includeAndLinkSFML()
 	filter { "system:linux", "configurations:Debug" }
 		links
 		{
-			"sfml-window",
-			"sfml-system",
-			"sfml-graphics",
-			"sfml-audio"
+			"sfml-window-d",
+			"sfml-system-d",
+			"sfml-graphics-d",
+			"sfml-audio-d"
 		}
 	filter {}
 	
