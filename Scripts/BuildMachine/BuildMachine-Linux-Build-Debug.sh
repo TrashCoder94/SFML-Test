@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cp -R /$(CURDIR)/ThirdParty/SFML-Binaries-Test/Linux/. /usr/local/.
+cp -R ThirdParty/SFML-Binaries-Test/Linux/. /usr/local/.
 
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5
