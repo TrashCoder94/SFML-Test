@@ -1,7 +1,5 @@
 #!/bin/sh
 
-cp -R ThirdParty/SFML-Binaries-Test/Linux/. /usr/local/.
-
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5
 ThirdParty/premake/Binaries/premake5 --file=premake5.lua gmake2
@@ -15,7 +13,5 @@ make config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
-find . -type f
-realpath Window.hpp
 exit 1
 fi

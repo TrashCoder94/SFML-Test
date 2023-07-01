@@ -155,29 +155,13 @@ function includeAndLinkSFML()
 			"dl", 
 			"GL", 
 			"pthread", 
-			"X11"
-		}
-	filter ""
-	
-	filter { "system:linux", "configurations:Debug" }
-		links
-		{
-			"sfml-window-d",
-			"sfml-system-d",
-			"sfml-graphics-d",
-			"sfml-audio-d"
-		}
-	filter {}
-	
-	filter { "system:linux", "not configurations:Debug" }
-		links
-		{
+			"X11",
 			"sfml-window",
 			"sfml-system",
 			"sfml-graphics",
 			"sfml-audio"
 		}
-	filter {}
+	filter ""
 end
 
 -- Other premakes to use
