@@ -150,10 +150,6 @@ function includeAndLinkSFML()
 	filter ""
 	
 	filter "system:linux"
-		includedirs 
-		{
-			"%{IncludeDir.SFMLLinux}"
-		}
 		links
 		{
 			"dl", 
