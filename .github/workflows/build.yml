@@ -124,7 +124,7 @@ jobs:
         working-directory: ${{env.GITHUB_WORKSPACE}}
         run: | 
           brew update
-          brew install openal
+          brew install openal-soft
           brew install sfml
           brew info sfml
   
