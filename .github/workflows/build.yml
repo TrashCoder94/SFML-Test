@@ -125,7 +125,6 @@ jobs:
         run: | 
           brew update
           brew install openal-soft
-          brew install libsndfile
           brew install sfml
           brew info sfml
   
