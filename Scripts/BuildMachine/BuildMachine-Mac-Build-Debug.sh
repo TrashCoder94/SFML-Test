@@ -1,9 +1,5 @@
 #!/bin/sh
 
-echo "Copying SFML frameworks to /Library/Frameworks/"
-cp -R /$(CURDIR)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/. /Library/Frameworks.
-cp -R /$(CURDIR)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/. /Library/Frameworks.
-
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5_mac
 ThirdParty/premake/Binaries/premake5_mac --file=premake5.lua gmake2

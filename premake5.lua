@@ -125,14 +125,6 @@ function includeAndLinkSFML()
 	filter ""
 	
 	filter "system:macosx"
-		includedirs 
-		{
-			"%{IncludeDir.SFMLMac}"
-		}
-		libdirs
-		{
-			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/**"
-		}
 		links
 		{
 			"QuartzCore.framework", 
