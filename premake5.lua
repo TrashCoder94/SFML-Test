@@ -66,8 +66,6 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories
 IncludeDir = {}
 IncludeDir["SFMLWindows"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/include"
-IncludeDir["SFMLMac"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/include"
-IncludeDir["SFMLLinux"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Linux/include"
 
 function includeAndLinkSFML()
 	filter "system:windows"
@@ -135,7 +133,6 @@ function includeAndLinkSFML()
 			"CoreGraphics.framework",
 			"OpenAL.framework",
 			"libsndfile.dylib",
-			"SFML.framework",
 			"sfml-audio.framework",
 			"sfml-graphics.framework",
 			"sfml-network.framework",
