@@ -133,7 +133,7 @@ function includeAndLinkSFML()
 			"CoreGraphics.framework",
 			"OpenAL.framework",
 			"libsndfile.dylib",
-			"sfml-audio.framework",
+			-- "sfml-audio.framework",
 			"sfml-graphics.framework",
 			"sfml-network.framework",
 			"sfml-system.framework",
