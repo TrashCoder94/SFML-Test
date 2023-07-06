@@ -66,6 +66,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories
 IncludeDir = {}
 IncludeDir["SFMLWindows"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/include"
+IncludeDir["SFMLMac"] = "/usr/local/Cellar/sfml/2.5.1_2/include"
 
 function includeAndLinkSFML()
 	filter "system:windows"
@@ -123,6 +124,15 @@ function includeAndLinkSFML()
 	filter ""
 	
 	filter "system:macosx"
+		includedirs 
+		{ 
+			"%{IncludeDir.SFMLMac}"
+		}
+		libdirs
+		{
+			"/usr/local/Cellar/sfml/2.5.1_2/lib"
+		}
+	
 		links
 		{
 			"QuartzCore.framework", 
