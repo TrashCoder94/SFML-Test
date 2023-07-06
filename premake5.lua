@@ -134,7 +134,6 @@ function includeAndLinkSFML()
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
 			"OpenAL.framework",
-			"sndfile.framework",
 			"sfml-audio.framework",
 			"sfml-graphics.framework",
 			"sfml-network.framework",
