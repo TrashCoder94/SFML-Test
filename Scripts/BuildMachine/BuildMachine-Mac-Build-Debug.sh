@@ -8,5 +8,6 @@ make config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
+find . -type f
 exit 1
 fi
