@@ -130,7 +130,8 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"/usr/local/Cellar/sfml/2.5.1_2/Frameworks"
+			"/usr/local/Cellar/sfml/2.5.1_2/lib",
+			"/usr/local/Cellar/sfml/2.5.1_2/lib/**"
 		}
 	
 		links

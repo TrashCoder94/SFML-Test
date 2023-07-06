@@ -9,5 +9,8 @@ if [ $? -ne 0 ]
 then
 echo "Building debug configuration failed, exiting out..."
 find . -type f
+realpath Window.hpp
+realpath FLAC.framework
+realpath sfml-audio.framework
 exit 1
 fi
