@@ -124,6 +124,7 @@ jobs:
         working-directory: ${{env.GITHUB_WORKSPACE}}
         run: | 
           brew update
+          brew install flac
           brew install openal-soft
           brew install sfml
           brew list
