@@ -148,11 +148,11 @@ function includeAndLinkSFML()
 			--"vorbisfile.framework",
 			--"vorbis.framework",
 			--"ogg.framework",
-			"sfml-audio.2.5.1.dylib",
-			"sfml-graphics.2.5.1.dylib",
-			"sfml-network.2.5.1.dylib",
-			"sfml-system.2.5.1.dylib",
-			"sfml-window.2.5.1.dylib"
+			"sfml-audio.2.5.1.framework",
+			"sfml-graphics.2.5.1.framework",
+			"sfml-network.2.5.1.framework",
+			"sfml-system.2.5.1.framework",
+			"sfml-window.2.5.1.framework"
 		}
 	filter ""
 	
