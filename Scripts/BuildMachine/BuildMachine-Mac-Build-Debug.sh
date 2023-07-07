@@ -12,5 +12,6 @@ find /usr/local/Cellar/sfml -name *.framework
 realpath Window.hpp
 realpath FLAC.framework
 realpath sfml-audio.framework
+realpath sfml-audio.2.5.1.framework
 exit 1
 fi
