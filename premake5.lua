@@ -144,7 +144,7 @@ function includeAndLinkSFML()
 			"CoreGraphics.framework",
 			"OpenAL.framework",
 			--"FLAC.framework",
-			"vorbisenc.framework",
+			--"vorbisenc.framework",
 			"vorbisfile.framework",
 			"vorbis.framework",
 			"ogg.framework",
