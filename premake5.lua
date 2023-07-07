@@ -142,17 +142,17 @@ function includeAndLinkSFML()
 			"IOKit.framework", 
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
-			"OpenAL.framework",
-			"FLAC.framework",
-			"vorbisenc.framework",
-			"vorbisfile.framework",
-			"vorbis.framework",
-			"ogg.framework",
-			"sfml-audio.framework",
-			"sfml-graphics.framework",
-			"sfml-network.framework",
-			"sfml-system.framework",
-			"sfml-window.framework"
+			--"OpenAL.framework",
+			--"FLAC.framework",
+			--"vorbisenc.framework",
+			--"vorbisfile.framework",
+			--"vorbis.framework",
+			--"ogg.framework",
+			"sfml-audio.2.5.1.dylib",
+			"sfml-graphics.2.5.1.dylib",
+			"sfml-network.2.5.1.dylib",
+			"sfml-system.2.5.1.dylib",
+			"sfml-window.2.5.1.dylib"
 		}
 	filter ""
 	
