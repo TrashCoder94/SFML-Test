@@ -407,7 +407,10 @@ FodyWeavers.xsd
 !ThirdParty/SFML-Binaries-Test/Windows/lib/*
 !ThirdParty/SFML-Binaries-Test/Windows/lib/Debug/*.pdb
 !ThirdParty/SFML-Binaries-Test/Mac/Frameworks/*
+!ThirdParty/SFML-Binaries-Test/Mac/extlibs/*
 !ThirdParty/SFML-Binaries-Test/Linux/lib/*
+
+ThirdParty/SFML-Binaries-Test/Mac/examples/*
 
 **.vcxproj
 **.vcxproj.filters

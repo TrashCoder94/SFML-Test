@@ -124,16 +124,6 @@ function includeAndLinkSFML()
 	filter ""
 	
 	filter "system:macosx"
-		includedirs 
-		{ 
-			"%{IncludeDir.SFMLMac}"
-		}
-		libdirs
-		{
-			"/usr/local/Cellar/sfml/2.5.1_2/lib",
-			"%{wks.location}"
-		}
-	
 		links
 		{
 			"QuartzCore.framework", 
@@ -148,11 +138,11 @@ function includeAndLinkSFML()
 			--"vorbisfile.framework",
 			--"vorbis.framework",
 			--"ogg.framework",
-			"sfml-audio.2.5.1.framework",
-			"sfml-graphics.2.5.1.framework",
-			"sfml-network.2.5.1.framework",
-			"sfml-system.2.5.1.framework",
-			"sfml-window.2.5.1.framework"
+			"sfml-audio.framework",
+			"sfml-graphics.framework",
+			"sfml-network.framework",
+			"sfml-system.framework",
+			"sfml-window.framework"
 		}
 	filter ""
 	

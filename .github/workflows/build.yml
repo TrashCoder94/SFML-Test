@@ -127,9 +127,6 @@ jobs:
           brew install coreutils
           brew install flac
           brew install openal-soft
-          brew install sfml
-          brew list
-          brew info sfml
   
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}
