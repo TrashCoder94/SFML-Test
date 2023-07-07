@@ -145,7 +145,7 @@ function includeAndLinkSFML()
 			"OpenAL.framework",
 			--"FLAC.framework",
 			--"vorbisenc.framework",
-			"vorbisfile.framework",
+			--"vorbisfile.framework",
 			"vorbis.framework",
 			"ogg.framework",
 			"sfml-audio.2.5.1.framework",
