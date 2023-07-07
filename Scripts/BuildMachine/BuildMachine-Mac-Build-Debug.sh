@@ -8,8 +8,7 @@ make config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
-find /usr/local/Cellar/sfml/2.5.1_2/lib/ -type f
-find /usr/local/Cellar/sfml/2.5.1_2/Frameworks/ -type f
+find / -name *.framework
 realpath Window.hpp
 realpath FLAC.framework
 realpath sfml-audio.framework
