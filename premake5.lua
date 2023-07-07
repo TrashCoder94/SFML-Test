@@ -147,7 +147,7 @@ function includeAndLinkSFML()
 			--"vorbisenc.framework",
 			--"vorbisfile.framework",
 			--"vorbis.framework",
-			"ogg.framework",
+			--"ogg.framework",
 			"sfml-audio.2.5.1.framework",
 			"sfml-graphics.2.5.1.framework",
 			"sfml-network.2.5.1.framework",
