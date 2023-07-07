@@ -131,7 +131,7 @@ function includeAndLinkSFML()
 		libdirs
 		{
 			"/usr/local/Cellar/sfml/2.5.1_2/lib",
-			"/usr/local/Cellar/sfml/2.5.1_2/lib/**"
+			"%{wks.location}"
 		}
 	
 		links
@@ -142,12 +142,12 @@ function includeAndLinkSFML()
 			"IOKit.framework", 
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
-			--"OpenAL.framework",
-			--"FLAC.framework",
-			--"vorbisenc.framework",
-			--"vorbisfile.framework",
-			--"vorbis.framework",
-			--"ogg.framework",
+			"OpenAL.framework",
+			"FLAC.framework",
+			"vorbisenc.framework",
+			"vorbisfile.framework",
+			"vorbis.framework",
+			"ogg.framework",
 			"sfml-audio.2.5.1.framework",
 			"sfml-graphics.2.5.1.framework",
 			"sfml-network.2.5.1.framework",
