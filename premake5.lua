@@ -128,6 +128,10 @@ function includeAndLinkSFML()
 		{ 
 			"%{IncludeDir.SFMLMac}"
 		}
+		libdirs
+		{
+			"/Library/Frameworks"
+		}
 		links
 		{
 			"QuartzCore.framework", 
@@ -154,12 +158,12 @@ function includeAndLinkSFML()
 		-- So you have to manually add these options in for now...
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
-		{ 
-			"-F /Library/Frameworks" 
+		{
+			"-F /Library/Frameworks"
 		}
 		linkoptions 
-		{ 
-			"-F /Library/Frameworks" 
+		{
+			"-F /Library/Frameworks"
 		}
 	filter ""
 	
