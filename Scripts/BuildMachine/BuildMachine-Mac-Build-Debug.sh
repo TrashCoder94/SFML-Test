@@ -8,7 +8,7 @@ echo "Library path environment variable before:"
 echo $LD_LIBRARY_PATH
 
 echo "Setting Library path environment variable"
-export LD_LIBRARY_PATH=/Library/Frameworks:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/Library/Frameworks
 
 echo "Library path environment variable after:"
 echo $LD_LIBRARY_PATH
