@@ -1,6 +1,10 @@
 #!/bin/sh
 
 echo "Copying SFML frameworks to /Library/Frameworks/ folder"
+cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks /Library/Frameworks
+cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs /Library/Frameworks
+
+echo "Copying SFML frameworks to /users/runner/Library/Frameworks/ folder"
 cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks /users/runner/Library/Frameworks
 cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs /users/runner/Library/Frameworks
 
