@@ -12,6 +12,6 @@ make --debug=v config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
-find /usr/local/lib -type d
+ll /Library/Frameworks/
 exit 1
 fi
