@@ -125,6 +125,7 @@ jobs:
         run: | 
           brew update
           brew install coreutils
+          brew install flac
           
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}
