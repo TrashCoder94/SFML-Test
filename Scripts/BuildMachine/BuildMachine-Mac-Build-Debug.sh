@@ -12,5 +12,6 @@ make verbose=1 config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
+find /Library/Frameworks/FLAC.framework -type d
 exit 1
 fi
