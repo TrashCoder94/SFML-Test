@@ -8,7 +8,7 @@ echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5_mac
 ThirdParty/premake/Binaries/premake5_mac --file=premake5.lua gmake2
 
-make --debug=b config=debug_x86_64
+make verbose=1 config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
