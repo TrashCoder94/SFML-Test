@@ -13,5 +13,12 @@ if [ $? -ne 0 ]
 then
 echo "Building debug configuration failed, exiting out..."
 find /Library/Frameworks/FLAC.framework -type d
+find /Library/Frameworks/flac.framework -type d
+find ~/Library/Frameworks/FLAC.framework -type d
+find ~/Library/Frameworks/flac.framework -type d
+find /System/Library/Frameworks/FLAC.framework -type d
+find /System/Library/Frameworks/flac.framework -type d
+find ~/System/Library/Frameworks/FLAC.framework -type d
+find ~/System/Library/Frameworks/flac.framework -type d
 exit 1
 fi
