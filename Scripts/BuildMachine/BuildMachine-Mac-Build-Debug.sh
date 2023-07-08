@@ -12,7 +12,6 @@ make config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
-find ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks -type d
-find ./ThirdParty/SFML-Binaries-Test/Mac/extlibs -type d
+find /Users/runner/Library/Frameworks -type d
 exit 1
 fi
