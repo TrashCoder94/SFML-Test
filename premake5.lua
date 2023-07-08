@@ -128,6 +128,10 @@ function includeAndLinkSFML()
 		{ 
 			"%{IncludeDir.SFMLMac}"
 		}
+		libdirs
+		{
+			"/Users/runner/Library/Frameworks"
+		}
 		links
 		{
 			"QuartzCore.framework", 
