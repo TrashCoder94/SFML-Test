@@ -13,6 +13,9 @@
 # echo "Library path environment variable after:"
 # echo $LD_LIBRARY_PATH
 
+echo "Printing $GITHUB_PATH environment variable..."
+echo $GITHUB_PATH
+
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5_mac
 ThirdParty/premake/Binaries/premake5_mac --file=premake5.lua gmake2
