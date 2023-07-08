@@ -128,10 +128,6 @@ function includeAndLinkSFML()
 		{ 
 			"%{IncludeDir.SFMLMac}"
 		}
-		libdirs
-		{
-			"/usr/local/lib"
-		}
 		links
 		{
 			"QuartzCore.framework", 
