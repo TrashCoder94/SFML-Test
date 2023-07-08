@@ -1,8 +1,8 @@
 #!/bin/sh
 
 echo "Copying SFML frameworks to /Library/Frameworks/ folder"
-cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/. /users/runner/Library/Frameworks.
-cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs/. users/runner/Library/Frameworks.
+cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks /users/runner/Library/Frameworks
+cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs users/runner/Library/Frameworks
 
 echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5_mac
