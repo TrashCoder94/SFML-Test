@@ -130,7 +130,7 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"/Users/runner/Library/Frameworks"
+			"/usr/local/lib"
 		}
 		links
 		{
