@@ -159,11 +159,11 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks"
+			"-F /Library/Frameworks", "-F ~/Library/Frameworks"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks"
+			"-F /Library/Frameworks", "-F ~/Library/Frameworks"
 		}
 	filter ""
 	
