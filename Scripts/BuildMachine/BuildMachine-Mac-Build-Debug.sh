@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "Copying SFML frameworks to /usr/local/lib folder"
-cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks /Library/Frameworks
-cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs /Library/Frameworks
+echo "Copying SFML frameworks to /Library/Frameworks"
+sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks /Library/Frameworks
+sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs /Library/Frameworks
 
 echo "Library path environment variable before:"
 echo $LD_LIBRARY_PATH
