@@ -66,9 +66,18 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories
 IncludeDir = {}
 IncludeDir["SFMLWindows"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/include"
-IncludeDir["SFMLMac"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/include"
+IncludeDir["SFMLMac"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/include"
 
 function includeAndLinkSFML()
+	-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
+	-- Frameworks appear to need extra options for build/linking since premake doesn't automatically add them to the command line for compiling
+	-- So you have to manually add these options in for now...
+	-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
+	configuration { "macosx", "gmake" }
+		buildoptions { "-F /Library/Frameworks" }
+		linkoptions { "-F /Library/Frameworks" }
+	configuration {}
+
 	filter "system:windows"
 		includedirs 
 		{ 
