@@ -17,10 +17,10 @@ echo "Generating Project with Premake!"
 chmod +x ThirdParty/premake/Binaries/premake5_mac
 ThirdParty/premake/Binaries/premake5_mac --file=premake5.lua gmake2
 
-make --debug=v config=debug_x86_64
+make --debug=b config=debug_x86_64
 if [ $? -ne 0 ] 
 then
 echo "Building debug configuration failed, exiting out..."
-realpath sfml-audio
+find /Library/Frameworks -type d
 exit 1
 fi
