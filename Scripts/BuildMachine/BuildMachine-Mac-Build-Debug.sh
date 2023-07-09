@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Creating Symbolic Links"
+echo "Creating SFML Symbolic Links"
 
 # ==================================
 # SFML
@@ -29,6 +29,8 @@ ln –s ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Res
 # Window
 ln –s ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/sfml-window ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/sfml-window
 ln –s ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Resources ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/Resources
+
+echo "Creating extlibs Symbolic Links"
 
 # ==================================
 # EXTLIBS
