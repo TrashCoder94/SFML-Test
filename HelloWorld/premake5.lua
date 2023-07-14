@@ -1,7 +1,7 @@
 project "HelloWorld"
 	kind "ConsoleApp"
 	language "C++"
-	cppdialect "C++14"
+	cppdialect "C++17"
 
 	targetdir ("%{wks.location}/Binaries/" .. outputdir .. "/%{prj.name}")
 	objdir ("%{wks.location}/Intermediate/" .. outputdir .. "/%{prj.name}")
@@ -22,4 +22,4 @@ project "HelloWorld"
 		"Source"
 	}
 	
-	includeAndLinkSFML()
+	includeAndLinkExampleLibraryUsingSFML()

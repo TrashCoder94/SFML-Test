@@ -1,0 +1,23 @@
+#pragma once
+
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics/CircleShape.hpp>
+
+namespace ExampleLibrary
+{
+	class Application
+	{
+	public:
+		Application();
+		~Application();
+		
+		void Initialize();
+		void Update();
+		void Render();
+		void Deinitialize();
+		
+	private:
+		sf::RenderWindow* m_pWindow;
+		sf::CircleShape* m_pShape;
+	};
+}

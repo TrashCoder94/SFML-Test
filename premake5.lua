@@ -29,7 +29,7 @@ workspace "SFMLTest"
 	
 	linkoptions 
 	{ 
-		"-IGNORE:4006"
+		"-IGNORE:4006,4099"
 	}
 	
 	defines
@@ -67,6 +67,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["SFMLWindows"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/include"
 IncludeDir["SFMLMac"] = "%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/include"
+IncludeDir["ExampleLibraryUsingSFML"] = "%{wks.location}/ExampleLibraryUsingSFML/Source"
 
 function includeAndLinkSFML()
 	filter "system:windows"
@@ -76,14 +77,18 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/lib",
-			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/lib/**"
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Windows/lib"
 		}
 	filter ""
 	
 	filter { "system:windows", "configurations:Debug" }
 		links
 		{
+			"sfml-graphics-s-d",
+			"sfml-window-s-d",
+			"sfml-audio-s-d",
+			"sfml-network-s-d",
+			"sfml-system-s-d",
 			"opengl32",
 			"freetype",
 			"winmm",
@@ -94,22 +99,20 @@ function includeAndLinkSFML()
 			"vorbisfile",
 			"vorbis",
 			"ogg",
-			"ws2_32",
-			"sfml-window-s-d",
-			"sfml-system-s-d",
-			"sfml-graphics-s-d",
-			"sfml-audio-s-d"
+			"ws2_32"
 		}
 	filter {}
 	
 	filter { "system:windows", "not configurations:Debug" }
 		links
 		{
+			"sfml-graphics-s",
 			"sfml-window-s",
+			"sfml-audio-s",
+			"sfml-network-s",
 			"sfml-system-s",
 			"opengl32",
 			"freetype",
-			"sfml-graphics-s",
 			"winmm",
 			"gdi32",
 			"openal32",
@@ -118,7 +121,6 @@ function includeAndLinkSFML()
 			"vorbisfile",
 			"vorbis",
 			"ogg",
-			"sfml-audio-s",
 			"ws2_32"
 		}
 	filter ""
@@ -146,11 +148,11 @@ function includeAndLinkSFML()
 			"vorbisfile.framework",
 			"vorbis.framework",
 			"ogg.framework",
-			"sfml-audio.framework",
 			"sfml-graphics.framework",
+			"sfml-window.framework",
+			"sfml-audio.framework",
 			"sfml-network.framework",
-			"sfml-system.framework",
-			"sfml-window.framework"
+			"sfml-system.framework"
 		}
 		
 		-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
@@ -170,16 +172,31 @@ function includeAndLinkSFML()
 	filter "system:linux"
 		links
 		{
+			"sfml-graphics",
+			"sfml-window",
+			"sfml-audio",
+			"sfml-network",
+			"sfml-system",
 			"dl", 
 			"GL", 
 			"pthread", 
-			"X11",
-			"sfml-window",
-			"sfml-system",
-			"sfml-graphics",
-			"sfml-audio"
+			"X11"
 		}
 	filter ""
+end
+
+function includeAndLinkExampleLibraryUsingSFML()		
+	links
+	{
+		"ExampleLibraryUsingSFML"
+	}
+	
+	includedirs
+	{
+		"%{IncludeDir.ExampleLibraryUsingSFML}"
+	}
+	
+	includeAndLinkSFML()
 end
 
 -- Other premakes to use
@@ -188,5 +205,6 @@ group "Dependencies"
 group ""
 
 group "Example"
+	include "ExampleLibraryUsingSFML"
 	include "HelloWorld"
 group ""
