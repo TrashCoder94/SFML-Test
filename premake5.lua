@@ -142,11 +142,11 @@ function includeAndLinkSFML()
 			"IOKit.framework",
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
-			"sfml-graphics.dylib",
-			"sfml-window.dylib",
-			"sfml-audio.dylib",
-			"sfml-network.dylib",
-			"sfml-system.dylib"
+			"sfml-graphics.2.6.0.dylib",
+			"sfml-window.2.6.0.dylib",
+			"sfml-audio.2.6.0.dylib",
+			"sfml-network.2.6.0.dylib",
+			"sfml-system.2.6.0.dylib"
 		}
 		
 		-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
