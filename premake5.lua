@@ -126,14 +126,14 @@ function includeAndLinkSFML()
 	filter ""
 	
 	filter "system:macosx"
-		--includedirs 
-		--{ 
-		--	"/usr/local/Cellar/sfml/2.6.0/include"
-		--}
-		--libdirs
-		--{
-		--	"/usr/local/Cellar/sfml/2.6.0/lib"
-		--}
+		includedirs 
+		{ 
+			"/usr/local/include"
+		}
+		libdirs
+		{
+			"/usr/local/lib"
+		}
 		links
 		{
 			"QuartzCore.framework",
@@ -149,18 +149,18 @@ function includeAndLinkSFML()
 			"sfml-system.2.6.0.dylib"
 		}
 		
-		---- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
-		---- Frameworks appear to need extra options for build/linking since premake doesn't automatically add them to the command line for compiling
-		---- So you have to manually add these options in for now...
-		---- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
-		--buildoptions 
-		--{
-		--	"-F /usr/local/Cellar/sfml/2.6.0/lib"
-		--}
-		--linkoptions 
-		--{
-		--	"-F /usr/local/Cellar/sfml/2.6.0/lib"
-		--}
+		-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
+		-- Frameworks appear to need extra options for build/linking since premake doesn't automatically add them to the command line for compiling
+		-- So you have to manually add these options in for now...
+		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
+		buildoptions 
+		{
+			"-F /usr/local/lib"
+		}
+		linkoptions 
+		{
+			"-F /usr/local/lib"
+		}
 		--postbuildcommands
 		--{
 		--	"pwd"--,

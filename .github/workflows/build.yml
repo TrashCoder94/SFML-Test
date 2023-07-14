@@ -127,6 +127,7 @@ jobs:
           brew install coreutils
           brew install sfml
           find /usr/local/Cellar/sfml/2.6.0/lib -type f
+          echo "Copying SFML include and dylibs to /usr/local/include and /usr/local/lib"
           sudo cp -R /usr/local/Cellar/sfml/2.6.0/include /usr/local/include
           sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib /usr/local/lib
 
