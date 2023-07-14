@@ -128,11 +128,11 @@ function includeAndLinkSFML()
 	filter "system:macosx"
 		includedirs 
 		{ 
-			""
+			"/usr/local/Cellar/sfml/2.6.0/include"
 		}
 		libdirs
 		{
-			""
+			"/usr/local/Cellar/sfml/2.6.0/lib"
 		}
 		links
 		{
@@ -155,11 +155,13 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks"
+			"-F /Library/Frameworks",
+			"-F /usr/local/Cellar/sfml/2.6.0/lib"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks"
+			"-F /Library/Frameworks",
+			"-F /usr/local/Cellar/sfml/2.6.0/lib"
 		}
 		postbuildcommands
 		{
