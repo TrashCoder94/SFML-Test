@@ -167,6 +167,11 @@ function includeAndLinkSFML()
 		{
 			"-F /Library/Frameworks"
 		}
+		postbuildcommands
+		{
+			"sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /$(CURDIR)/%{cfg.targetdir}/Frameworks/",
+			"sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /$(CURDIR)/%{cfg.targetdir}/Frameworks/"
+		}
 	filter ""
 	
 	filter "system:linux"
