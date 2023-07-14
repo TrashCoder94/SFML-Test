@@ -3,11 +3,17 @@
 #include <SFML/Graphics/RenderStates.hpp>
 #include <SFML/Window.hpp>
 
+#include <iostream>
+
 namespace ExampleLibrary
 {
 	Application::Application() : 
 		m_pWindow(new sf::RenderWindow(sf::VideoMode(200, 200), "SFML works!")),
-		m_pShape(new sf::CircleShape(100.f))
+		m_pShape(new sf::CircleShape(100.f)),
+		m_Clock(),
+		m_PreviousTime(),
+		m_ElapsedSeconds(0.0f),
+		m_AutoQuitTime(10.0f)
 	{}
 
 	Application::~Application()
@@ -16,12 +22,27 @@ namespace ExampleLibrary
 	void Application::Initialize()
 	{
 		m_pShape->setFillColor(sf::Color(0, 255, 0));
+
+		m_PreviousTime = m_Clock.now();
 	}
 
 	void Application::Update()
 	{
 		while (m_pWindow->isOpen())
 		{
+			auto currentTime = m_Clock.now();
+			auto deltaTime = currentTime - m_PreviousTime;
+			m_PreviousTime = currentTime;
+			auto currentDeltaTime = deltaTime.count() * 1e-9f;
+
+			m_ElapsedSeconds += currentDeltaTime;
+
+			if (m_ElapsedSeconds >= m_AutoQuitTime)
+			{
+				std::cout << m_AutoQuitTime << "s have passed, so shutting down this application!" << std::endl;
+				break;
+			}
+
 			sf::Event event;
 			while (m_pWindow->pollEvent(event))
 			{
