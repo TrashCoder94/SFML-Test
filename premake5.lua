@@ -132,7 +132,7 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"/usr/local/lib"
+			"/Library/Frameworks"
 		}
 		links
 		{
@@ -155,11 +155,11 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /usr/local/lib"
+			"-F /Library/Frameworks"
 		}
 		linkoptions 
 		{
-			"-F /usr/local/lib"
+			"-F /Library/Frameworks"
 		}
 		--postbuildcommands
 		--{
