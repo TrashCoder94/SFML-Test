@@ -162,11 +162,15 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
+			"-F /Library/Frameworks", 
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks  %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
+			"-F /Library/Frameworks",
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
 		}
 		postbuildcommands
 		{
