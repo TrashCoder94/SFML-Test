@@ -129,8 +129,8 @@ jobs:
           brew install --cask xquartz
           echo "/opt/X11/bin" >> $GITHUB_PATH 
           echo "Copying SFML frameworks to /Library/Frameworks"
-          sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/
-          sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/          
+          sudo cp -R ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/
+          sudo cp -R ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/
 
       #- name: Test
       #  working-directory: ${{env.GITHUB_WORKSPACE}}
