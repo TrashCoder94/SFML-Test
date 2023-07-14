@@ -155,12 +155,10 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks",
 			"-F /usr/local/Cellar/sfml/2.6.0/lib"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks",
 			"-F /usr/local/Cellar/sfml/2.6.0/lib"
 		}
 		postbuildcommands
