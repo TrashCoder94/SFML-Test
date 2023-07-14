@@ -23,7 +23,6 @@ namespace ExampleLibrary
 		sf::CircleShape* m_pShape;
 		
 		std::chrono::high_resolution_clock m_Clock;
-		std::chrono::steady_clock::time_point m_PreviousTime;
 		float m_ElapsedSeconds;
 		float m_AutoQuitTime;
 	};

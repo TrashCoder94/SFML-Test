@@ -11,7 +11,6 @@ namespace ExampleLibrary
 		m_pWindow(new sf::RenderWindow(sf::VideoMode(200, 200), "SFML works!")),
 		m_pShape(new sf::CircleShape(100.f)),
 		m_Clock(),
-		m_PreviousTime(),
 		m_ElapsedSeconds(0.0f),
 		m_AutoQuitTime(10.0f)
 	{}
@@ -22,17 +21,17 @@ namespace ExampleLibrary
 	void Application::Initialize()
 	{
 		m_pShape->setFillColor(sf::Color(0, 255, 0));
-
-		m_PreviousTime = m_Clock.now();
 	}
 
 	void Application::Update()
 	{
+		auto previousTime = m_Clock.now();
+
 		while (m_pWindow->isOpen())
 		{
 			auto currentTime = m_Clock.now();
-			auto deltaTime = currentTime - m_PreviousTime;
-			m_PreviousTime = currentTime;
+			auto deltaTime = currentTime - previousTime;
+			previousTime = currentTime;
 			auto currentDeltaTime = deltaTime.count() * 1e-9f;
 
 			m_ElapsedSeconds += currentDeltaTime;
