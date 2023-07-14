@@ -125,6 +125,8 @@ jobs:
         run: | 
           brew update
           brew install coreutils
+          brew install sfml
+          brew info sfml
           
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}

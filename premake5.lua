@@ -128,32 +128,25 @@ function includeAndLinkSFML()
 	filter "system:macosx"
 		includedirs 
 		{ 
-			"%{IncludeDir.SFMLMac}"
+			""
 		}
 		libdirs
 		{
-			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
-			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
+			""
 		}
 		links
 		{
-			"QuartzCore.framework", 
+			"QuartzCore.framework",
 			"Metal.framework",
 			"Cocoa.framework",
 			"IOKit.framework",
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
-			"OpenAL.framework",
-			"FLAC.framework",
-			"vorbisenc.framework",
-			"vorbisfile.framework",
-			"vorbis.framework",
-			"ogg.framework",
-			"sfml-graphics.framework",
-			"sfml-window.framework",
-			"sfml-audio.framework",
-			"sfml-network.framework",
-			"sfml-system.framework"
+			"sfml-graphics.dylib",
+			"sfml-window.dylib",
+			"sfml-audio.dylib",
+			"sfml-network.dylib",
+			"sfml-system.dylib"
 		}
 		
 		-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
@@ -162,15 +155,11 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks", 
-			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
-			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
+			"-F /Library/Frameworks"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks",
-			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
-			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
+			"-F /Library/Frameworks"
 		}
 		postbuildcommands
 		{
