@@ -169,7 +169,8 @@ function includeAndLinkSFML()
 		}
 		postbuildcommands
 		{
-			"sudo mkdir $(PWD)/%{cfg.targetdir}/Frameworks/",
+			"if [ -d $(PWD)/%{cfg.targetdir}/Frameworks/ ]; then echo \"Binaries folder exists post build...\" fi",
+			"if [ ! -d $(PWD)/%{cfg.targetdir}/Frameworks/ ]; then echo \"Binaries folder does not exist post build...\" fi",
 			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/",
 			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/",
 			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ $(PWD)/%{cfg.targetdir}/Frameworks/",
