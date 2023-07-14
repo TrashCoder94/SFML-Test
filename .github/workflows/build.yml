@@ -127,6 +127,7 @@ jobs:
           brew install coreutils
           brew install sfml
           brew info sfml
+          find /usr/local/Cellar/sfml/2.6.0 -type d
           
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}
