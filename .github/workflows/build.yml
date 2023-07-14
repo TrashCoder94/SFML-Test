@@ -125,9 +125,6 @@ jobs:
         run: | 
           brew update
           brew install coreutils
-          echo "Copying SFML frameworks to /Library/Frameworks"
-          sudo cp -R ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/
-          sudo cp -R ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/
           
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}

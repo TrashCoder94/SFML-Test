@@ -132,7 +132,8 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"/Library/Frameworks"
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
 		}
 		links
 		{
