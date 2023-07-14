@@ -169,8 +169,10 @@ function includeAndLinkSFML()
 		}
 		postbuildcommands
 		{
-			"sudo cp -R /$(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/",
-			"sudo cp -R /$(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/"
+			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/",
+			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/",
+			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ $(PWD)/%{cfg.targetdir}/Frameworks/",
+			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ $(PWD)/%{cfg.targetdir}/Frameworks/"
 		}
 	filter ""
 	
