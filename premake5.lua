@@ -132,8 +132,7 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"/Library/Frameworks",
-			"%{cfg.targetdir}"
+			"/Library/Frameworks"
 		}
 		links
 		{
@@ -162,16 +161,17 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks %{cfg.targetdir}"
+			"-F /Library/Frameworks"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks %{cfg.targetdir}"
+			"-F /Library/Frameworks"
 		}
 		postbuildcommands
 		{
-			"sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ %{cfg.targetdir}/",
-			"sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ %{cfg.targetdir}/"
+			"sudo mkdir /%{cfg.targetdir}/Frameworks/",
+			"sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /%{cfg.targetdir}/Frameworks/",
+			"sudo cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /%{cfg.targetdir}/Frameworks/"
 		}
 	filter ""
 	
