@@ -66,7 +66,7 @@ jobs:
   #        name: Linux-Binaries-Debug
   #        path: Binaries
   #
-  #    - name: Setup Prerequisites
+  #    - name: Setup and Install Prerequisites
   #      working-directory: ${{env.GITHUB_WORKSPACE}}
   #      run: |
   #        export DISPLAY=:99
@@ -94,7 +94,7 @@ jobs:
   #        name: Linux-Binaries-Release
   #        path: Binaries
   #
-  #    - name: Setup Prerequisites
+  #    - name: Setup and Install Prerequisites
   #      working-directory: ${{env.GITHUB_WORKSPACE}}
   #      run: |
   #        export DISPLAY=:99
@@ -122,7 +122,7 @@ jobs:
           name: Mac-Binaries-Debug
           path: Binaries
 
-      - name: Install Dependencies
+      - name: Setup and Install Prerequisites
         run: |
           brew update
           brew install coreutils
@@ -160,7 +160,7 @@ jobs:
   #        name: Mac-Binaries-Release
   #        path: Binaries
   #
-  #    - name: Install Dependencies
+  #    - name: Setup and Install Prerequisites
   #      run: |
   #        brew update
   #        brew install coreutils
