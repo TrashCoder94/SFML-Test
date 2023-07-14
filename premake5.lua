@@ -170,9 +170,9 @@ function includeAndLinkSFML()
 		postbuildcommands
 		{
 			"pwd",
-			"sudo mkdir $(PWD)/%{cfg.targetdir}/Frameworks",
-			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ $(PWD)/%{cfg.targetdir}/Frameworks/",
-			"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ $(PWD)/%{cfg.targetdir}/Frameworks/"
+			"sudo mkdir ../%{cfg.targetdir}/Frameworks",
+			"sudo cp -R ../ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ ../%{cfg.targetdir}/Frameworks/",
+			"sudo cp -R ../ThirdParty/SFML-Binaries-Test/Mac/extlibs/ ../%{cfg.targetdir}/Frameworks/"
 		}
 	filter ""
 	
