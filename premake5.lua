@@ -142,11 +142,11 @@ function includeAndLinkSFML()
 			"IOKit.framework",
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
-			"libsfml-graphics.2.6.0.dylib",
-			"libsfml-window.2.6.0.dylib",
-			"libsfml-audio.2.6.0.dylib",
-			"libsfml-network.2.6.0.dylib",
-			"libsfml-system.2.6.0.dylib"
+			"sfml-graphics.2.6.0.dylib",
+			"sfml-window.2.6.0.dylib",
+			"sfml-audio.2.6.0.dylib",
+			"sfml-network.2.6.0.dylib",
+			"sfml-system.2.6.0.dylib"
 		}
 		
 		-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
@@ -161,13 +161,12 @@ function includeAndLinkSFML()
 		{
 			"-F /Library/Frameworks"
 		}
-		--postbuildcommands
-		--{
-		--	"pwd"--,
-		--	--"sudo mkdir -p /%{cfg.targetdir}/Frameworks",
-		--	--"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /%{cfg.targetdir}/Frameworks/",
-		--	--"sudo cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /%{cfg.targetdir}/Frameworks/"
-		--}
+		postbuildcommands
+		{
+			"pwd"--,
+			--"sudo mkdir -p /%{cfg.targetdir}/Frameworks",
+			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib /%{cfg.targetdir}/"
+		}
 	filter ""
 	
 	filter "system:linux"
