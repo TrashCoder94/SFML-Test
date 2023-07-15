@@ -129,7 +129,6 @@ jobs:
           find /usr/local/Cellar/sfml/2.6.0/lib -type f
           echo "Copying SFML include and dylibs to /usr/local/include and /Library/Frameworks"
           sudo cp -R /usr/local/Cellar/sfml/2.6.0/include /usr/local/include
-          sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib /Library/Frameworks
 
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}
