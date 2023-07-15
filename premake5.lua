@@ -163,7 +163,7 @@ function includeAndLinkSFML()
 		}
 		postbuildcommands
 		{
-			"pwd"--,
+			--"pwd",
 			--"sudo mkdir -p /%{cfg.targetdir}/Frameworks",
 			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib /%{cfg.targetdir}/"
 		}
