@@ -167,11 +167,6 @@ function includeAndLinkSFML()
 		{
 			"-F /Library/Frameworks"
 		}
-		prebuildcommands
-		{
-			"sudo cp -R /$(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/",
-			"sudo cp -R /$(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/"
-		}
 	filter ""
 	
 	filter "system:linux"
