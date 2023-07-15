@@ -167,13 +167,11 @@ function includeAndLinkSFML()
 		{
 			"-F /Library/Frameworks"
 		}
-		--prebuildcommands
-		--{
-			--"pwd",
-			--"mkdir -p %{cfg.targetdir}",
-			--"cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/",
-			--"find %{cfg.targetdir} -type f"
-		--}
+		prebuildcommands
+		{
+			"sudo cp -R /$(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ /Library/Frameworks/",
+			"sudo cp -R /$(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ /Library/Frameworks/"
+		}
 	filter ""
 	
 	filter "system:linux"
