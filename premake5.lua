@@ -200,8 +200,7 @@ function includeAndLinkExampleLibraryUsingSFML()
 	
 	includedirs
 	{
-		"%{IncludeDir.ExampleLibraryUsingSFML}",
-		"/usr/local/include"
+		"%{IncludeDir.ExampleLibraryUsingSFML}"
 	}
 	
 	includeAndLinkSFML()
