@@ -5,9 +5,9 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>English</string>
     <key>CFBundleExecutable</key>
-    <string>OpenAL</string>
+    <string>ogg</string>
     <key>CFBundleIdentifier</key>
-    <string>org.sfml-dev.OpenAL</string>
+    <string>org.sfml-dev.ogg</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundlePackageType</key>
@@ -16,7 +16,5 @@
     <string>????</string>
     <key>CFBundleVersion</key>
     <string>1.0</string>
-    <key>CFBundleSupportedPlatforms</key>
-    <array><string>MacOSX</string></array>
 </dict>
 </plist>
