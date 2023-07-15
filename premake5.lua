@@ -132,7 +132,7 @@ function includeAndLinkSFML()
 		}
 		libdirs
 		{
-			"/Library/Frameworks"
+			"%{cfg.targetdir}"
 		}
 		links
 		{
@@ -155,18 +155,18 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F /Library/Frameworks"
+			"-F %{cfg.targetdir}"
 		}
 		linkoptions 
 		{
-			"-F /Library/Frameworks"
+			"-F %{cfg.targetdir}"
 		}
-		postbuildcommands
+		prebuildcommands
 		{
 			--"pwd",
-			--"sudo mkdir -p /%{cfg.targetdir}/Frameworks",
-			"find %{cfg.targetdir} -type f",
-			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/"
+			"sudo mkdir -p %{cfg.targetdir}",
+			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/",
+			"find %{cfg.targetdir} -type f"
 		}
 	filter ""
 	
