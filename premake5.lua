@@ -197,7 +197,7 @@ function includeAndLinkExampleLibraryUsingSFML()
 		"%{IncludeDir.ExampleLibraryUsingSFML}"
 	}
 	
-	includeAndLinkSFML()
+	-- includeAndLinkSFML()
 end
 
 -- Other premakes to use
