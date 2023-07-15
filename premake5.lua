@@ -196,7 +196,14 @@ function includeAndLinkExampleLibraryUsingSFML()
 		"%{IncludeDir.ExampleLibraryUsingSFML}"
 	}
 	
-	includeAndLinkSFML()
+	filter "system:macosx"
+		includedirs 
+		{ 
+			"%{IncludeDir.SFMLMac}"
+		}
+	filter ""
+	
+	-- includeAndLinkSFML()
 end
 
 -- Other premakes to use
