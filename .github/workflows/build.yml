@@ -125,10 +125,6 @@ jobs:
         run: | 
           brew update
           brew install coreutils
-          brew install sfml
-          find /usr/local/Cellar/sfml/2.6.0/lib -type f
-          echo "Copying SFML include and dylibs to /usr/local/include and /Library/Frameworks"
-          sudo cp -R /usr/local/Cellar/sfml/2.6.0/include /usr/local/include
 
       - name: Build
         working-directory: ${{env.GITHUB_WORKSPACE}}

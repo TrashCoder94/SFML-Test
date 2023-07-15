@@ -128,25 +128,32 @@ function includeAndLinkSFML()
 	filter "system:macosx"
 		includedirs 
 		{ 
-			"/usr/local/include"
+			"%{IncludeDir.SFMLMac}"
 		}
 		libdirs
 		{
-			"%{cfg.targetdir}"
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
+			"%{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
 		}
 		links
 		{
-			"QuartzCore.framework",
+			"QuartzCore.framework", 
 			"Metal.framework",
 			"Cocoa.framework",
 			"IOKit.framework",
 			"CoreVideo.framework", 
 			"CoreGraphics.framework",
-			"sfml-graphics.2.6.0.dylib",
-			"sfml-window.2.6.0.dylib",
-			"sfml-audio.2.6.0.dylib",
-			"sfml-network.2.6.0.dylib",
-			"sfml-system.2.6.0.dylib"
+			"OpenAL.framework",
+			"FLAC.framework",
+			"vorbisenc.framework",
+			"vorbisfile.framework",
+			"vorbis.framework",
+			"ogg.framework",
+			"sfml-graphics.framework",
+			"sfml-window.framework",
+			"sfml-audio.framework",
+			"sfml-network.framework",
+			"sfml-system.framework"
 		}
 		
 		-- https://stackoverflow.com/questions/29465141/linking-mac-frameworks-using-premake-and-gnu-make
@@ -155,19 +162,23 @@ function includeAndLinkSFML()
 		-- Using /Library/Frameworks since that seems to be the standard place for all non system frameworks...
 		buildoptions 
 		{
-			"-F %{cfg.targetdir}"
+			"-F /Library/Frameworks", 
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
 		}
 		linkoptions 
 		{
-			"-F %{cfg.targetdir}"
+			"-F /Library/Frameworks",
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/extlibs",
+			"-F %{wks.location}/ThirdParty/SFML-Binaries-Test/Mac/Frameworks"
 		}
-		prebuildcommands
-		{
+		--prebuildcommands
+		--{
 			--"pwd",
-			"mkdir -p %{cfg.targetdir}",
-			"cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/",
-			"find %{cfg.targetdir} -type f"
-		}
+			--"mkdir -p %{cfg.targetdir}",
+			--"cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/",
+			--"find %{cfg.targetdir} -type f"
+		--}
 	filter ""
 	
 	filter "system:linux"
@@ -198,7 +209,7 @@ function includeAndLinkExampleLibraryUsingSFML()
 		"/usr/local/include"
 	}
 	
-	-- includeAndLinkSFML()
+	includeAndLinkSFML()
 end
 
 -- Other premakes to use
