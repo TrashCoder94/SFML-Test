@@ -21,7 +21,7 @@ namespace ExampleLibrary
 	private:
 		sf::RenderWindow* m_pWindow;
 		sf::CircleShape* m_pShape;
-		
+
 		std::chrono::high_resolution_clock m_Clock;
 		float m_ElapsedSeconds;
 		float m_AutoQuitTime;
