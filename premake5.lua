@@ -164,8 +164,8 @@ function includeAndLinkSFML()
 		prebuildcommands
 		{
 			--"pwd",
-			"sudo mkdir -p %{cfg.targetdir}",
-			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/",
+			"mkdir -p %{cfg.targetdir}",
+			"cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/",
 			"find %{cfg.targetdir} -type f"
 		}
 	filter ""
