@@ -165,8 +165,8 @@ function includeAndLinkSFML()
 		{
 			--"pwd",
 			--"sudo mkdir -p /%{cfg.targetdir}/Frameworks",
-			"find /%{cfg.targetdir} -type f",
-			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib /%{cfg.targetdir}/"
+			"find %{cfg.targetdir} -type f",
+			"sudo cp -R /usr/local/Cellar/sfml/2.6.0/lib %{cfg.targetdir}/"
 		}
 	filter ""
 	
