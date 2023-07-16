@@ -4,7 +4,8 @@ pwd
 $PWD
 echo "$PWD"
 
-function createlink {
+function createlink () 
+{
 source_file=$1
 
 target_file=$2
