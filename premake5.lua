@@ -175,39 +175,39 @@ function includeAndLinkSFML()
 			"echo \"Creating extlibs Symbolic Links\"",
 			
 			-- FLAC
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/FLAC\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/FLAC\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/FLAC\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/FLAC\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/Current\"",
 			
 			-- Freetype
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/freetype\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/freetype\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/freetype\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/freetype\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/Current\"",
 			
 			-- Ogg
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/ogg\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/ogg\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/ogg\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/ogg\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/Current\"",
 			
 			-- OpenAL
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/OpenAL\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/OpenAL\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/OpenAL\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/OpenAL\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/Current\"",
 			
 			-- Vorbis
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/vorbis\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/vorbis\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/vorbis\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/vorbis\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/Current\"",
 			
 			-- Vorbisenc
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/vorbisenc\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/vorbisenc\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/vorbisenc\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/vorbisenc\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/Current\"",
 			
 			-- Vorbisfile
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/vorbisfile\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/vorbisfile\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A\" \"./ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/vorbisfile\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/vorbisfile\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/Current\"",
 			
 			-- ==================================
 			-- EXTLIBS
@@ -215,35 +215,35 @@ function includeAndLinkSFML()
 			" echo \"Creating SFML symbolic links\"",
 			
 			-- Main
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/SFML\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/SFML\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Headers\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Headers\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/SFML\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/SFML\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Headers\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Headers\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/Current\"",
 			
 			-- Audio
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/sfml-audio\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/sfml-audio\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/sfml-audio\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/sfml-audio\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/Current\"",
 			
 			-- Graphics
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/sfml-graphics\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/sfml-graphics\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/sfml-graphics\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/sfml-graphics\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/Current\"",
 			
 			-- Network
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/sfml-network\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/sfml-network\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/sfml-network\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/sfml-network\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/Current\"",
 			
 			-- System
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/sfml-system\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/sfml-system\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/sfml-system\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/sfml-system\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/Current\"",
 			
 			-- Window
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/sfml-window\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/sfml-window\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/Resources\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Resources\"",
-			"ln -sf \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1\" \"./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/Current\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/sfml-window\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/sfml-window\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/Resources\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Resources\"",
+			"ln -sf \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1\" \"$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/Current\"",
 			
 			"echo \"Finished creating symbolic links\"",
 			
