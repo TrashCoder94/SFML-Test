@@ -139,31 +139,30 @@ jobs:
           path: |
             Binaries/**
   
-#  Mac-x64-Release:
-#    runs-on: macos-latest
-#
-#    steps:
-#      - name: Checkout Repository
-#        uses: actions/checkout@v2
-#        with:
-#            submodules: recursive
-#      
-#      - name: Setup and Install Prerequisites
-#        working-directory: ${{env.GITHUB_WORKSPACE}}
-#        run: | 
-#          brew update
-#          brew install coreutils
-#      
-#      - name: Build
-#        working-directory: ${{env.GITHUB_WORKSPACE}}
-#        run: |
-#          chmod +x Scripts/BuildMachine/BuildMachine-Mac-Build-Release.sh
-#          Scripts/BuildMachine/BuildMachine-Mac-Build-Release.sh
-#
-#      - name: Archive Mac Artifacts
-#        uses: actions/upload-artifact@v2
-#        with:
-#          name: Mac-Binaries-Release
-#          path: |
-#            Binaries/**
-#
+  Mac-x64-Release:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+            submodules: recursive
+      
+      - name: Setup and Install Prerequisites
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: | 
+          brew update
+          brew install coreutils
+      
+      - name: Build
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: |
+          chmod +x Scripts/BuildMachine/BuildMachine-Mac-Build-Release.sh
+          Scripts/BuildMachine/BuildMachine-Mac-Build-Release.sh
+
+      - name: Archive Mac Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Mac-Binaries-Release
+          path: |
+            Binaries/**
