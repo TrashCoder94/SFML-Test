@@ -15,6 +15,8 @@ if [[ -f $target_file ]]; then
 fi
 
 ln -s $source_file $target_file
+
+return 0
 }
 
 # ==================================
