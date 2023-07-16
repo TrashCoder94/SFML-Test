@@ -9,107 +9,107 @@ env:
   SOLUTION_FILE_PATH: .
 
 jobs:
- Windows-x64-Debug:
-   runs-on: windows-latest
-   
-   steps:
-     - name: Checkout Repository
-       uses: actions/checkout@v2
-       with:
-           submodules: recursive
- 
-     - name: Setup VS Dev Environment
-       uses: seanmiddleditch/gha-setup-vsdevenv@v4
- 
-     - name: Build
-       working-directory: ${{env.GITHUB_WORKSPACE}}
-       run: Scripts/BuildMachine/BuildMachine-Windows-Build-Debug.bat
-       
-     - name: Archive Windows Artifacts
-       uses: actions/upload-artifact@v2
-       with:
-         name: Windows-Binaries-Debug
-         path: |
-           Binaries/**
- 
- Windows-x64-Release:
-   runs-on: windows-latest
-   
-   steps:
-     - name: Checkout Repository
-       uses: actions/checkout@v2
-       with:
-           submodules: recursive
- 
-     - name: Setup VS Dev Environment
-       uses: seanmiddleditch/gha-setup-vsdevenv@v4
- 
-     - name: Build
-       working-directory: ${{env.GITHUB_WORKSPACE}}
-       run: Scripts/BuildMachine/BuildMachine-Windows-Build-Release.bat
-       
-     - name: Archive Windows Artifacts
-       uses: actions/upload-artifact@v2
-       with:
-         name: Windows-Binaries-Release
-         path: |
-           Binaries/**
- 
- Linux-x64-Debug:
-   runs-on: ubuntu-latest
- 
-   steps:
-     - name: Checkout Repository
-       uses: actions/checkout@v2
-       with:
-           submodules: recursive
- 
-     - name: Setup and Install Prerequisites
-       working-directory: ${{env.GITHUB_WORKSPACE}}
-       run: | 
-         sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox
-         sudo apt-get install libsfml-dev
-         
-     - name: Build
-       working-directory: ${{env.GITHUB_WORKSPACE}}
-       run: |
-         chmod +x Scripts/BuildMachine/BuildMachine-Linux-Build-Debug.sh
-         Scripts/BuildMachine/BuildMachine-Linux-Build-Debug.sh
-       
-     - name: Archive Linux Artifacts
-       uses: actions/upload-artifact@v2
-       with:
-         name: Linux-Binaries-Debug
-         path: |
-           Binaries/**
-           
- Linux-x64-Release:
-   runs-on: ubuntu-latest
- 
-   steps:
-     - name: Checkout Repository
-       uses: actions/checkout@v2
-       with:
-           submodules: recursive
- 
-     - name: Setup and Install Prerequisites
-       working-directory: ${{env.GITHUB_WORKSPACE}}
-       run: | 
-         sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox
-         sudo apt-get install libsfml-dev
-         
-     - name: Build
-       working-directory: ${{env.GITHUB_WORKSPACE}}
-       run: |
-         chmod +x Scripts/BuildMachine/BuildMachine-Linux-Build-Release.sh
-         Scripts/BuildMachine/BuildMachine-Linux-Build-Release.sh
-       
-     - name: Archive Linux Artifacts
-       uses: actions/upload-artifact@v2
-       with:
-         name: Linux-Binaries-Release
-         path: |
-           Binaries/**
+  Windows-x64-Debug:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+            submodules: recursive
+  
+      - name: Setup VS Dev Environment
+        uses: seanmiddleditch/gha-setup-vsdevenv@v4
+  
+      - name: Build
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: Scripts/BuildMachine/BuildMachine-Windows-Build-Debug.bat
+        
+      - name: Archive Windows Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Windows-Binaries-Debug
+          path: |
+            Binaries/**
+  
+  Windows-x64-Release:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+            submodules: recursive
+  
+      - name: Setup VS Dev Environment
+        uses: seanmiddleditch/gha-setup-vsdevenv@v4
+  
+      - name: Build
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: Scripts/BuildMachine/BuildMachine-Windows-Build-Release.bat
+        
+      - name: Archive Windows Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Windows-Binaries-Release
+          path: |
+            Binaries/**
+  
+  Linux-x64-Debug:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+            submodules: recursive
+  
+      - name: Setup and Install Prerequisites
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: | 
+          sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox
+          sudo apt-get install libsfml-dev
+          
+      - name: Build
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: |
+          chmod +x Scripts/BuildMachine/BuildMachine-Linux-Build-Debug.sh
+          Scripts/BuildMachine/BuildMachine-Linux-Build-Debug.sh
+        
+      - name: Archive Linux Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Linux-Binaries-Debug
+          path: |
+            Binaries/**
+            
+  Linux-x64-Release:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+            submodules: recursive
+  
+      - name: Setup and Install Prerequisites
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: | 
+          sudo apt-get update && sudo apt-get install xorg-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev libdrm-dev libgbm-dev xvfb fluxbox
+          sudo apt-get install libsfml-dev
+          
+      - name: Build
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: |
+          chmod +x Scripts/BuildMachine/BuildMachine-Linux-Build-Release.sh
+          Scripts/BuildMachine/BuildMachine-Linux-Build-Release.sh
+        
+      - name: Archive Linux Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Linux-Binaries-Release
+          path: |
+            Binaries/**
  
   Mac-x64-Debug:
     runs-on: macos-latest
