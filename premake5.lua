@@ -249,8 +249,8 @@ function includeAndLinkSFML()
 			
 			"echo \"Copying frameworks over to the binaries folder...\"",
 			"mkdir -p %{cfg.targetdir}",
-			"cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ %{cfg.targetdir}",
-			"cp -R $(PWD)/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ %{cfg.targetdir}",
+			"cp -R ./ThirdParty/SFML-Binaries-Test/Mac/Frameworks/ %{cfg.targetdir}",
+			"cp -R ./ThirdParty/SFML-Binaries-Test/Mac/extlibs/ %{cfg.targetdir}",
 			
 			"echo \"Finished copying frameworks over to the binaries folder...\""
 		}
