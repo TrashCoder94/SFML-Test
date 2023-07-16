@@ -1,6 +1,8 @@
 #!/bin/sh
 
 pwd
+$PWD
+echo "$PWD"
 
 # ==================================
 # EXTLIBS
@@ -8,9 +10,9 @@ pwd
 echo "Creating extlibs Symbolic Links"
 
 # FLAC
-sudo ln –sf "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/Current" "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A"
 sudo ln –sf "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/FLAC" "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/FLAC"
 sudo ln –sf "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Resources" "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/Resources"
+sudo ln –sf "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/Current" "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A"
 
 # Freetype
 sudo ln –sf "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/freetype" "/Users/runner/work/SFML-Test/SFML-Test/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/freetype"
