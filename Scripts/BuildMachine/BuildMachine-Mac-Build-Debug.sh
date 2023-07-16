@@ -25,39 +25,39 @@ return 0
 echo "Creating extlibs Symbolic Links"
 
 # FLAC
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/FLAC" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/FLAC"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/FLAC" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/FLAC"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/FLAC.framework/Versions/Current"
 
 # Freetype
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/freetype" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/freetype"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Resources" 
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/freetype" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/freetype"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Resources" 
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/freetype.framework/Versions/Current"
 
 # Ogg
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/ogg" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/ogg"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/ogg" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/ogg"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/ogg.framework/Versions/Current"
 
 # OpenAL
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/OpenAL" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/OpenAL"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/OpenAL" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/OpenAL"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/OpenAL.framework/Versions/Current"
 
 # Vorbis
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/vorbis" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/vorbis"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/vorbis" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/vorbis"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbis.framework/Versions/Current"
 
 # Vorbisenc
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/vorbisenc" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/vorbisenc"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/vorbisenc" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/vorbisenc"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisenc.framework/Versions/Current"
 
 # Vorbisfile
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/vorbisfile" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/vorbisfile"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/vorbisfile" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/vorbisfile"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/A" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/Versions/Current"
 
 # ==================================
 # EXTLIBS
@@ -65,35 +65,35 @@ createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/extlibs/vorbisfile.framework/
 echo "Creating SFML symbolic links"
 
 # Main
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/SFML" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/SFML"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Headers" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Headers"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/SFML" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/SFML"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1/Headers" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Headers"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/SFML.framework/Versions/Current"
 
 # Audio
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/sfml-audio" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/sfml-audio"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/sfml-audio" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/sfml-audio"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-audio.framework/Versions/Current"
 
 # Graphics
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/sfml-graphics" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/sfml-graphics"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/sfml-graphics" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/sfml-graphics"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-graphics.framework/Versions/Current"
 
 # Network
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/sfml-network" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/sfml-network"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/sfml-network" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/sfml-network"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-network.framework/Versions/Current"
 
 # System
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/sfml-system" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/sfml-system"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/sfml-system" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/sfml-system"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-system.framework/Versions/Current"
 
 # Window
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/sfml-window" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/sfml-window"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Resources"
-createLink "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/Current"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/sfml-window" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/sfml-window"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1/Resources" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Resources"
+ln -sf "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/2.5.1" "$PWD/ThirdParty/SFML-Binaries-Test/Mac/Frameworks/sfml-window.framework/Versions/Current"
 
 echo "Finished creating symbolic links"
 
