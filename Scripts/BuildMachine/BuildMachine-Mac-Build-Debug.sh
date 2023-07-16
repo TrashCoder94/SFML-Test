@@ -1,24 +1,5 @@
 #!/bin/sh
 
-pwd
-$PWD
-echo "$PWD"
-
-function createlink () 
-{
-source_file=$1
-
-target_file=$2
-
-if [[ -f $target_file ]]; then
-    rm $target_file
-fi
-
-ln -s $source_file $target_file
-
-return 0
-}
-
 # ==================================
 # EXTLIBS
 # ==================================
